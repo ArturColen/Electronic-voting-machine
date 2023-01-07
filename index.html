@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Artur Bomtempo">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <!-- === Favicon === -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- === CSS File === -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- === Machine === -->
+    <div id="machine">
+        <div id="screen">
+            <div id="top">
+                <!-- === Information === -->
+                <div id="info">
+                    <div id="vote"> <span>SEU VOTO PARA</span> </div>
+                    <div id="position"> <span>-------</span> </div>
+                    <div id="numbers"></div>
+                    <div id="data"></div>
+                </div>
+                <!-- === Candidates' Photo === -->
+                <div id="images"></div>
+            </div>
+            <!-- === Instructions === -->
+            <div id="instructions">
+                Aperte a tecla: <br>
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE para REINICIAR este voto 
+            </div>
+        </div>
+        <!-- === Keyboard === -->
+        <div id="keyboard">
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked('1')">1</div>
+                <div class="keyboard-button" onclick="clicked('2')">2</div>
+                <div class="keyboard-button" onclick="clicked('3')">3</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked('4')">4</div>
+                <div class="keyboard-button" onclick="clicked('5')">5</div>
+                <div class="keyboard-button" onclick="clicked('6')">6</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked('7')">7</div>
+                <div class="keyboard-button" onclick="clicked('8')">8</div>
+                <div class="keyboard-button" onclick="clicked('9')">9</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked('0')">0</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" id="blank-button" onclick="blank()">BRANCO</div>
+                <div class="keyboard-button" id="correct-button" onclick="correct()">CORRIGE</div>
+                <div class="keyboard-button" id="confirm-button" onclick="confirm()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === JS Files === -->
+    <script src="./assets/js/steps.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
