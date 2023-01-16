@@ -7,9 +7,9 @@ Project developed during the [B7Web](https://b7web.com.br/)'s JavaScript course 
 Simulate voting in the 2022 Brazilian elections (with only four candidates for each political office).
 
 ## 💻 Technologies used 
-* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): Page structuring, accessibility and semantics
-* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): Page styling 
-* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): Dynamicity of the page
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML): page structuring, accessibility and semantics
+* [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS): page styling 
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): dynamicity of the page
 
 ## 📁 Project access
 You can view the hosted page by clicking [here](https://arturcolen.github.io/Electronic-voting-machine/).
