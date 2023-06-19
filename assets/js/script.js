@@ -1,4 +1,3 @@
-// Manipulate the elements of the screen
 let yourVoteFor = document.querySelector('#vote span');
 let position = document.querySelector('#position span');
 let description = document.querySelector('#data');
@@ -6,13 +5,11 @@ let instructions = document.querySelector('#instructions');
 let images = document.querySelector('#images');
 let numbers = document.querySelector('#numbers');
 
-// Initial data
 let currentStep = 0;
 let number = '';
 let blankVote = false;
 let = votes = [];
 
-// Start an empty voting screen
 function startStep() {
     let step = steps[currentStep];
     let numberHTML = '';
@@ -36,7 +33,6 @@ function startStep() {
     numbers.innerHTML = numberHTML;
 }
 
-// Refresh the screen with the applicant's data after you have entered the number
 function updateInterface() {
     let step = steps[currentStep];
     let candidate = step.candidates.filter((item) => {
@@ -79,7 +75,6 @@ function updateInterface() {
 }
 
 
-// Enter the numbers and display them on the screen
 function clicked(n) {
     let element = document.querySelector('.number.blink');
 
@@ -97,7 +92,6 @@ function clicked(n) {
     }
 }
 
-// Show the blank vote
 function blank() {
     number = '';
     blankVote = true;
@@ -108,12 +102,10 @@ function blank() {
     images.innerHTML = '';
 }
 
-// Restart the voting screen
 function correct() {
     startStep();
 }
 
-// Confirm the vote and move on to the next step
 function confirm() {
     let step = steps[currentStep];
     let confirmedVote = false;
