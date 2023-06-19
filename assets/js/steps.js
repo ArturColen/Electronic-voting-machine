@@ -1,4 +1,3 @@
-// Store in an array the candidates data
 let steps = [
     {
         title: 'DEPUTADO FEDERAL',
